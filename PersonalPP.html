@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Izza Mae Lobingco | Personal Profile</title>
+</head>
+<body>
+
+    <header>
+        <h1>Izza Mae Lobingco</h1>
+        <p>Student | Aspiring Web Developer | Lifelong Learner</p>
+
+        <nav>
+            <ul>
+                <li><a href="#about">Favorite Flower</a></li>
+                <li><a href="#schedule">Class Schedule</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <h2>My favorite flower</h2>
+
+            <figure>
+                <img
+                    src="tulips.webp"
+                    alt="Pink tulips"
+                    width="300"
+                >
+                <figcaption>Tulips</figcaption>
+            </figure>
+
+            <p>
+                Tulips are my favorite flowers because of their simple yet beautiful appearance.
+                Their bright colors and delicate petals make them stand out in any garden.
+                I admire tulips because they symbolize happiness, hope, and new beginnings,
+                which inspire me to stay positive and keep growing every day.
+            </p>
+        </section>
+
+        <section id="schedule">
+            <h2>Class Schedule</h2>
+
+            <table>
+                <caption>Class Schedule</caption>
+
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Day</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Web Programming</td>
+                        <td>Tuesday & Thursday</td>
+                        <td>9:30 AM - 11:00 AM</td>
+                    </tr>
+                    <tr>
+                        <td>Software Engineering 1</td>
+                        <td>Monday & Friday</td>
+                        <td>10:00 AM - 11:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Application Development</td>
+                        <td>Wednesday</td>
+                        <td>8:00 PM - 10:00 PM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="skills">
+            <h2>Skills and Interests</h2>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java Programming</li>
+                <li>C Programming</li>
+                <li>Web Development</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form action="/contact" method="post">
+
+                <p>
+                    <label for="fullname">Full Name:</label><br>
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="fullname"
+                        required
+                        minlength="3"
+                    >
+                </p>
+
+                <p>
+                    <label for="email">Email Address:</label><br>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="age">Age:</label><br>
+                    <input
+                        type="number"
+                        id="age"
+                        name="age"
+                        min="16"
+                        max="100"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="birthday">Birthday:</label><br>
+                    <input
+                        type="date"
+                        id="birthday"
+                        name="birthday"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="message">Message:</label><br>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        cols="30"
+                        required
+                        minlength="10"
+                    ></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Send Message</button>
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Izza Mae Lobingco. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
