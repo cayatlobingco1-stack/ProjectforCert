@@ -1,102 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Profile</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Izza Mae Lobingco - Personal Profile</title>
 </head>
-<body>
+<body id="top">
 
-    <header>
-        <h1>Izza Mae Lobingco</h1>
-        <p>Student</p>
+  <header>
+    <h1>Izza Mae Lobingco</h1>
+    <p>3rd Year Computer Science Student</p>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#schedule">Class Schedule</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <nav>
-            <ul>
-                <li><a href="#about">My Favorite Flower
-                </a></li>
-                <li><a href="#schedule">Skills and Interests</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <figure>
+        <img src="Izza.jpg" alt="Portrait of Izza Mae Lobingco smiling outdoors" width="250" height="250">
+        <figcaption>Izza Mae Lobingco</figcaption>
+      </figure>
+      <p>Hi! I am Izza Mae Lobingco, a 22-year-old 3rd year Computer Science student. I enjoy learning how to build clean, accessible websites from scratch. Outside of my coding subjects and coursework, I spend my free time drawing, playing guitar, and listening to music.</p>
+    </section>
 
-<main>
-<section id="about">
-    <h2>My Favorite Flower</h2>
+    <section id="schedule">
+      <h2>Class Schedule</h2>
+      <table border="1">
+        <caption>My Weekly Subjects</caption>
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Monday / Wednesday</th>
+            <th>Tuesday / Thursday</th>
+            <th>Friday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>08:00 AM - 09:30 AM</td>
+            <td>Algorithms and Complexity</td>
+            <td>Social Issues</td>
+            <td>Algorithms and Complexity</td>
+          </tr>
+          <tr>
+            <td>10:00 AM - 11:00 AM</td>
+            <td>Software Engineering 1</td>
+            <td>Methods of Research</td>
+            <td>Software Engineering 1</td>
+          </tr>
+          <tr>
+            <td>11:00 PM - 12:30 PM</td>
+            <td>Mobile App Development</td>
+            <td>Web Programming</td>
+            <td>Mobile App Development</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-    <figure>
-        <img src="tulips.webp" alt="Pink tulips" width="300">
-        <figcaption>Pink Tulips</figcaption>
-    </figure>
-
-    <p>
-        Among all flowers, tulips are my favorite because of their bright colors and simple beauty.
-        They symbolize happiness, hope, and new beginnings. Whenever I see tulips, they remind me
-        to stay positive and continue working toward my goals despite challenges. Their elegance and
-        beauty make them special to me.
-    </p>
-</section>
-
-<section id="skills">
-    <h2>Skills and Interests</h2>
-
-    <ul>
-        <li>Creating simple websites using HTML and CSS</li>
-        <li>Learning Java and C programming</li>
-        <li>Exploring web development concepts</li>
-        <li>Working on school technology projects</li>
-        <li>Learning new programming techniques</li>
-    </ul>
-</section>
-
-<section id="contact">
-    <h2>Contact Me</h2>
-
-    <p>
-        Feel free to send me a message if you would like to connect, collaborate,
-        or learn more about my projects and interests.
-    </p>
-
-    <form action="/contact" method="post">
-
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="#" method="post">
         <p>
-            <label for="fullname">Full Name:</label><br>
-            <input type="text" id="fullname" name="fullname" required minlength="3">
+          <label for="name">Your Name:</label><br>
+          <input type="text" id="name" name="name" required minlength="2" placeholder="Enter your name">
         </p>
 
         <p>
-            <label for="email">Email Address:</label><br>
-            <input type="email" id="email" name="email" required>
+          <label for="email">Email Address:</label><br>
+          <input type="email" id="email" name="email" required placeholder="you@email.com">
         </p>
 
         <p>
-            <label for="age">Age:</label><br>
-            <input type="number" id="age" name="age" min="16" max="100" required>
+          <label for="topic">Topic:</label><br>
+          <select id="topic" name="topic" required>
+            <option value="">Select a topic</option>
+            <option value="school">School / Study Group</option>
+            <option value="project">Web Project</option>
+            <option value="hello">Just saying hi</option>
+          </select>
         </p>
 
         <p>
-            <label for="birthday">Birthday:</label><br>
-            <input type="date" id="birthday" name="birthday" required>
+          <label for="date">Preferred Date to Reply:</label><br>
+          <input type="date" id="date" name="date" required>
         </p>
 
         <p>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="30" required minlength="10"></textarea>
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="4" cols="35" required minlength="5" placeholder="Type your message here..."></textarea>
         </p>
 
         <p>
-            <button type="submit">Send Message</button>
+          <input type="checkbox" id="agree" name="agree" required>
+          <label for="agree">Confirm that my details are correct</label>
         </p>
 
-    </form>
-</section>
-</main>
+        <p>
+          <button type="submit">Send</button>
+          <button type="reset">Clear</button>
+        </p>
+      </form>
+    </section>
+  </main>
 
-
-<footer>
-    <p>Created by Izza Mae Lobingco | BSCS Student | 2026</p>
-</footer>
+  <footer>
+    <p>Created by Izza Mae Lobingco © 2026</p>
+    <p><a href="#top">Back to top</a></p>
+  </footer>
 
 </body>
 </html>
